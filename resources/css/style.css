@@ -7,6 +7,15 @@ header a{
     text-align: left;
     font-weight: bolder;
     font-style: normal;
+    text-decoration: none;
+
+}
+header a:hover {
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.15s;
 
 }
 header {
@@ -39,8 +48,14 @@ header h2 {
     left: 55px;
     top: 0px;
 
-}    
 
+}    
+header h2:hover {
+  text-decoration: underline;
+  color: black;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.55s;
+}
 header nav{
     display: inline;
     position: relative;
@@ -143,13 +158,20 @@ nav a {
     border-radius: 1%;
     text-decoration: none;
   }
-  #sign-up-cta .button a {
+  #sign-up-cta a {
       text-decoration: none;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
   }
 
+  #sign-up-cta .button:hover {
+    background-color: black;
+    text-decoration: underline;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.55s;
+    transition-delay: 0.10s;
 
+  }
   .mid-section {
     display: flex;
     position: relative;
@@ -213,7 +235,10 @@ nav a {
     
 }
 
+.mid-section :hover {
+  background-color: lightgray;
 
+}
 
 
 .mid-section #banner h2 {
@@ -294,6 +319,8 @@ nav a {
   
 
 }
+
+
 .learning #learning-section .image-conatiner {
   display: inline-flex;
   position: relative;
@@ -333,8 +360,12 @@ nav a {
   line-height: 1.6;
   font-size: 25.5px;
   margin-top: 8px;
-
-
+}
+.learning #learning-section a{
+  text-decoration: none;
+}
+.learning #learning-section .caption:hover{
+  background-color: rgb(189, 184, 184);
 }
 .learning #learning-section .caption h5{
   opacity : 0.7;
@@ -421,24 +452,47 @@ nav a {
   position: relative;
   top: -180px;
   justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-left: 360px;
 
+
+}
+.thesis .box #boxid .box-cta .now:hover{
+  background-color: lightgray;
+}
+.thesis .box #boxid .box-cta .new:hover{
+  background-color: lightgray;
 
 }
 .thesis .box #boxid .box-cta {
   position: relative; 
-  margin-left: -1760px;
+  margin-left: -2160px;
   height: 20rem;
+  justify-content: space-between;
+  align-items: space-between;
+  display: inline-flex;
+  position: relative;
+  flex-wrap: wrap;
+  
+
 }
 .thesis .box #boxid .box-cta .new{
-  width: 85%;
   position: relative;
-  margin-left: -25px;
+  height: 20rem;
+  padding-right: 365px;
+
+ 
 }
+
 .thesis .box #boxid .box-cta .now{
-  width: 85%;
   position: relative;
-  margin-left: 0px;
-  top: 56px;
+  height: 20rem;
+  padding-right: 276px;
+
+ 
 }
 .thesis .box #boxid .box-cta h4{
   font-family: Arial, Helvetica, sans-serif;
@@ -448,13 +502,13 @@ nav a {
   font-size: 40px;
   position: relative;
   padding-left: 350px;
- 
+  width: 65%;
   margin-right: 40px;
 
 }
 .thesis .box #boxid .box-cta figure{
   position: relative;
-  top: -10px;
+  top: 0px;
   width: 35%;
   padding: 16px;
 }
@@ -468,6 +522,9 @@ nav a {
   padding-left: 350px;
   margin-right: -70px;
 
+}
+.thesis .box #boxid .box-cta a{
+  text-decoration: none;
 }
 
 .footer{
@@ -514,4 +571,12 @@ footer a{
   opacity: 0.8;
   font-size: 24px;
 
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: black;
+  opacity: 1.0;
+  font-weight: 600;
+  
 }
