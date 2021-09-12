@@ -1,0 +1,517 @@
+
+header a{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: black;
+    opacity: 1.9;
+    text-align: left;
+    font-weight: bolder;
+    font-style: normal;
+
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+    top: -10px;
+    padding: 1.875rem;
+    justify-content: space-between;
+    align-content: space-between;
+
+
+} 
+header .logo {
+    height: 60px;
+    top: 20px;
+    position: relative;
+
+}
+header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: gray;
+    opacity: 0.8;
+    text-align: left;
+    position: absolute;
+    font-weight: 500;
+    left: 55px;
+    top: 0px;
+
+}    
+
+header nav{
+    display: inline;
+    position: relative;
+    padding-left: 1100px;
+
+    justify-content: space-between;
+    align-content: space-between;
+
+
+}
+header ul {
+    display: inline-flex;
+    position: relative;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: space-between;
+    opacity: 1.9;
+    top: 0px;
+ 
+  }
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a4a4a;
+    padding: 15px;
+    font-style: normal;
+    font-size: 28px;
+
+    font-weight: lighter;
+    text-decoration: none;
+  }
+
+  .main-section {
+      background-color: lightgray;
+      display: flex;
+      position: relative;
+      max-height: 60.3rem;
+      width: auto;
+      top: 56px;
+      overflow: hidden;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+
+.main-section img{
+    width: 60%;
+    display: inline-flex;
+    position: relative;
+    margin: 32px;
+    overflow: hidden;
+    padding-left: 4px;;
+}
+
+
+  #sign-up-cta {
+    position: relative;
+    top: 125px;
+    left: 2.5%;
+  }
+  
+  #sign-up-cta .content {
+    width: 34.625rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+
+  }
+  
+  #sign-up-cta h1 {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 42, 42);
+    font-style: normal;
+  }
+  
+  #sign-up-cta h2 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 42, 42);
+    font-style: normal;
+  }
+  
+  #sign-up-cta h2 strong {
+    font-weight: 800;
+  }
+
+  
+  #sign-up-cta .button {
+    margin-top: 3.825rem;
+    padding: 1.25rem 7.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: #4a4a4a;
+    border-radius: 1%;
+    text-decoration: none;
+  }
+  #sign-up-cta .button a {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+  }
+
+
+  .mid-section {
+    display: flex;
+    position: relative;
+    background-color: white;
+    height: 68.3rem;
+    width: 100%;
+    top: 132px;
+    left: 34px;
+    overflow: hidden;
+    justify-content:center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.mid-section img{
+    width: 60%;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.mid-section h2 {
+    font-size: 45px;
+    top: 20px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 42, 42);
+    font-style: normal;   
+}
+.mid-section p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 42, 42);
+    font-style: normal;   
+    text-align: left;
+    opacity: 0.8;
+
+}
+.mid-section a {
+    font-weight: 10;
+    opacity: 0.8;
+}
+.mid-section .banner-content{
+    display: inline-flex;
+    position: relative;
+    width: 40rem;
+    height: 18rem;
+    justify-content: space-around;
+    top: -120px;
+
+
+}
+.mid-section #banner {
+    padding-left: -15px;
+    width: 80rem;
+    height: auto;
+    justify-content: space-around;
+    border-left: solid 2px lightgray;
+    border-bottom: solid 3px lightgray;
+
+    
+}
+
+
+
+
+.mid-section #banner h2 {
+    padding: -10.5rem 0;
+    position: absolute;
+    margin-left: 250px;
+    top: 45px;
+    vertical-align: bottom;
+    line-height: normal;
+    font-size: 27.5px;
+    font-weight: bolder;
+}
+
+.mid-section #banner p {
+  padding: -10.5rem 0;
+  position: absolute;
+  margin-left: 250px;
+  top: 90px;
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 17.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(44, 42, 42);
+  font-style: normal;   
+  text-align: left;
+  font-weight: 10;
+  opacity: 0.8;
+}
+
+
+.mid-section #banner a {
+  position: relative;
+  margin-right: 250px;
+  top: 40.5px;
+  line-height: 1.6;
+  font-size: 17.5px;
+  text-decoration: none;
+}
+.mid-section #banner img {
+  width: 35%;
+  height: auto;
+  margin-left: -10px;
+  top: 16px;
+
+}
+.mid-section #banner .lecture a {
+  top: 70.5px;
+}
+
+#learning-section{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: 72px;
+  padding-right: 72px;
+
+
+}
+.learning{
+  background-color: lightgray;
+  position: relative;
+  height: 72.3rem;
+  width: auto;
+  top: 156px;
+  overflow: hidden;
+
+
+}
+.learning #learning-section .learn{
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  
+
+}
+.learning #learning-section .image-conatiner {
+  display: inline-flex;
+  position: relative;
+
+}
+.learning img {
+  height: auto;
+  width: 25rem;
+  padding: 20px;
+}
+.learning h4{
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 50px;
+}
+.learning h4 strong {
+  font-weight: bolder;
+  text-align: center;
+  text-justify: center;
+}
+.learning #learning-section .caption{
+  background-color: white;
+  color:#4a4a4a;
+  line-height: 1.6;
+  width: 23.5rem;
+  height: 14.5rem;
+  padding-top : 22px;
+  padding-left: 24.8px;
+  margin-left: 20px;
+  margin-top: -30px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.learning #learning-section .caption h3{
+  line-height: 1.6;
+  font-size: 25.5px;
+  margin-top: 8px;
+
+
+}
+.learning #learning-section .caption h5{
+  opacity : 0.7;
+  font-weight: 1;
+  line-height: 0.6;
+  font-size: 22px;
+  margin-top: 0px;
+}
+.learning #learning-section .caption h6{
+  opacity : 0.7;
+  font-weight: 1;
+  line-height: 1.6;
+  font-size: 22px;
+  margin-top: -10px;
+
+}
+
+.thesis{
+  display: flex;
+  position: relative;
+  top: 236px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 62rem;
+  overflow: hidden;
+  border-bottom: solid 1px lightgray;
+}
+.thesis h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.thesis h2 strong{
+  font-weight: bolder;
+}
+
+.thesis .video{
+  display: inline-flex;
+  position: relative;
+  padding-left: 24px;
+  padding-top: 32px;
+}
+
+.thesis video {
+  width: 50%;
+  border: solid 3px darkgray;
+
+}
+.thesis .subtitle{
+  width: 50%;  
+}
+.thesis .subtitle h3 strong{
+  font-size: 30px;
+  font-weight: 700;
+
+}
+.thesis .subtitle h3{
+  padding-top: 24px;
+  padding-left: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#4a4a4a;
+  line-height: normal;
+}
+.thesis .subtitle p{
+  padding-top: 8px;
+  padding-left: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4a4a4a;
+  line-height: normal;
+  opacity: 0.8;
+  font-size: 28px;
+}
+.thesis .box{
+  display: inline-flex;
+  position: relative;
+  justify-content:center;
+  width: 40%;
+  margin-left: 94px;
+}
+.thesis .box #boxid{
+  display: inline-flex;
+  position: relative;
+  top: -180px;
+  justify-content: center;
+
+
+}
+.thesis .box #boxid .box-cta {
+  position: relative; 
+  margin-left: -1760px;
+  height: 20rem;
+}
+.thesis .box #boxid .box-cta .new{
+  width: 85%;
+  position: relative;
+  margin-left: -25px;
+}
+.thesis .box #boxid .box-cta .now{
+  width: 85%;
+  position: relative;
+  margin-left: 0px;
+  top: 56px;
+}
+.thesis .box #boxid .box-cta h4{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#4a4a4a;
+  line-height: normal;
+  margin-top: -260px;
+  font-size: 40px;
+  position: relative;
+  padding-left: 350px;
+ 
+  margin-right: 40px;
+
+}
+.thesis .box #boxid .box-cta figure{
+  position: relative;
+  top: -10px;
+  width: 35%;
+  padding: 16px;
+}
+.thesis .box #boxid .box-cta p{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#4a4a4a;
+  line-height: 1.4;
+  margin-top: -32px;
+  font-size: 26px;
+  position: relative;
+  padding-left: 350px;
+  margin-right: -70px;
+
+}
+
+.footer{
+  display:inline-flex;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  font-size: 24px;
+  color: #4a4a4a;
+  top: 230px;
+  position: relative;
+}
+
+footer{
+  margin-left: 24px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  font-size: 24px;
+  color: #4a4a4a;
+  position: relative;
+
+}
+footer h5{
+  font-weight: 400;
+  opacity: 0.8;
+}
+footer ul{
+  display: inline-flex;
+  list-style-type:none;
+  position: relative;
+  top: -13px;
+
+}
+footer nav{
+    display: inline;
+    position: relative;
+    padding-left: 1200px;
+
+}
+footer a{
+  display: inline-flex;
+  justify-items: flex-end;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 24px;
+
+}
