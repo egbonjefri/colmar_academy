@@ -9,6 +9,9 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+
   <title>Colmar Academy</title>
 
 </head>
@@ -18,6 +21,7 @@
     <div class="logo">
         <img src="./resources/images/ic-logo.svg" class="logo">
       <h2><a href="#">COLMAR</a>ACADEMY</h2>
+      </div>
       <nav class= "navlist">
         <ul>
           <li><a href="#">On Campus</a></li>
@@ -26,39 +30,57 @@
           <li><a href="#">Sign in</a></li>
         </ul>
       </nav>
-    </div>
+      <nav class="mobile">
+        <ul>
+          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+        </ul>
+      </nav>
     </header>
 <!--Main section-->
 <div class="main-section">
+  <div id ="msection">
     <img src="./resources/images/banner.jpg">
+    <div id="content-cta">
+      <div class="mobile">
         <div id="sign-up-cta">
-          <div class="content center">
-            <div class="header">
+          <div class="content-center">
               <h2><strong>Learn something new everyday</strong></h2>
+              </div>
+              <div class="header">
               <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                </div>
               <a href="#"><div class="button">Start here</div></a>
-            </div>
-          </div>
+              <a href="#"><div class="mobile-button">Start here</div></a>
+        </div>
+      </div>
+      </div>
       </div>
 </div>
 <!--Mid section-->
 <div class ="mid-section">
+  <div class ="midsection-desktop">
     <img src="./resources/images/information-main.jpg">
     <h2>It doesn't hurt to keep practicing</h2>
     <p><a>"Curabitur vitae libero in ipusm porttitor consequat. Aliquam et commodo lectus,<br> nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br> eget magna laoreet, efficitur dolor consequat, tristique ligula"</a></p>
    <br>
    <br>
     <p><a>Emanuel, Sr Strategist at Hiring.com</a></p>
+    </div>
     <div class="banner-content">
         <div id="banner">
           <div class= "banner-cta">
             <div class="orientation">
             <figure><img src="./resources/images/information-orientation.jpg">
             </figure>
-            <h2><strong>Orientation date</strong></h2>
+          </div>
+            <div class="text">
+            <span><h2><strong>Orientation date</strong></h2>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <br>
-            <p><a href ="#">Read more</a></p>
+            <p><a href ="#">Read more</a></p></span>
             </div>
             </div>
         </div>
@@ -69,10 +91,12 @@
             <div class="content">
             <figure><img src="./resources/images/information-campus.jpg">
             </figure>
-            <h2><strong>Our Campus</strong></h2>
+          </div>
+            <div class="text">
+            <span><h2><strong>Our Campus</strong></h2>
             <p>Find which campus is close by you</p>
             <br>
-            <p><a href ="#">Read more</a></p>
+            <p><a href ="#">Read more</a></p></span>
             </div>
             </div>
         </div>
@@ -83,18 +107,29 @@
             <div class="lecture">
             <figure><img src="./resources/images/information-guest-lecture.jpg">
             </figure>
-            <h2><strong>Our Guest Lecture</strong></h2>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+          </div>
+            <div class="text">
+            <span><h2><strong>Special Guest Lecture</strong></h2>
+            <p>Join a keynote with Oliver Sack about music<br> in medical treatment</p>
             <br>
             <br>
-            <p><a href ="#">Read more</a></p>
+            <p class ="read"><a href ="#">Read more</a></p></span>
+            </div>
             </div>
             </div>
         </div>
-      </div>
+    </div>
 </div>
+<!--Learning section-->
 <div class="learning">
   <h4><strong>Start Learning</strong></h4>
+  <a href="#"><h3><span><div class="learning-button">Software engineering</div></span></h3></a>
+  <a href="#"><h3><span><div class="learning-button">Computer art</div></span></h3></a>
+  <a href="#"><h3><span><div class="learning-button">Design</div></span></h3></a>
+  <a href="#"><h3><span><div class="learning-button">Data</div></span></h3></a>
+  <a href="#"><h3><span><div class="learning-button">Business</div></span></h3></a>
+  <a href="#"><h3><span><div class="learning-button">Marketing</div></span></h3></a>
+
   <div id="learning-section">
   <div class="learn">
       <div class="image-container">
@@ -103,7 +138,6 @@
           <h3><strong>Software Engineering</strong></h3>
           <h5>COURSES</h5>
           <h6>Web Development, Mobile Development, iOT, APIs</h6>
-        
         </div>
       </a>
       </div>
@@ -156,8 +190,10 @@
     </div>
 </div>
 
+
+<!--Thesis section-->
 <div class="thesis">
-  <h2><strong>Thesis exhibit</strong></h2>
+  <h2><strong>Thesis exhibits</strong></h2>
   <div class="video">
     <video src="./resources/videos/thesis.mp4"autoplay controls muted>Video not supported</video>
   </div>
@@ -191,7 +227,6 @@
           </div>
           </div>
           </div>
-
 </div>
 </div>
 </div>

@@ -1,4 +1,6 @@
-
+html{
+  overflow-x: hidden;
+}
 header a{ 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
@@ -14,8 +16,7 @@ header a:hover {
   text-decoration: underline;
   color: black;
   font-weight: 600;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.15s;
+
 
 }
 header {
@@ -24,17 +25,18 @@ header {
     flex-direction: row;
     width: 100%;
     height: 20px;
-    top: -10px;
     padding: 1.875rem;
     justify-content: space-between;
     align-content: space-between;
 
-
 } 
+header .mobile {
+  display: none;
+}
 header .logo {
     height: 60px;
-    top: 20px;
     position: relative;
+    top: 7px;
 
 }
 header h2 {
@@ -46,7 +48,7 @@ header h2 {
     position: absolute;
     font-weight: 500;
     left: 55px;
-    top: 0px;
+    top: -10px;
 
 
 }    
@@ -59,10 +61,10 @@ header h2:hover {
 header nav{
     display: inline;
     position: relative;
-    padding-left: 1100px;
-
     justify-content: space-between;
     align-content: space-between;
+    margin-right: 30px;
+
 
 
 }
@@ -74,6 +76,7 @@ header ul {
     align-content: space-between;
     opacity: 1.9;
     top: 0px;
+
  
   }
 
@@ -90,93 +93,209 @@ nav a {
     text-decoration: none;
   }
 
-  .main-section {
-      background-color: lightgray;
-      display: flex;
-      position: relative;
-      max-height: 60.3rem;
-      width: auto;
-      top: 56px;
-      overflow: hidden;
-      justify-content: flex-start;
-      flex-direction: row;
-      align-items: flex-start;
-      flex-wrap: wrap;
-  }
+  @media only screen and (max-width: 500px) {
+    html{
+      overflow-x: hidden;
+      width: 415%;
+    }
+  
+    header .logo{
+      display: none;
+    }
+    header .navlist {
+      display: none;
+    }
 
-.main-section img{
-    width: 60%;
-    display: inline-flex;
-    position: relative;
-    margin: 32px;
-    overflow: hidden;
-    padding-left: 4px;;
+    header .mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+
+
+    }
+
+  header .mobile ul{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -18px;
+    z-index: 100;
+    background-color: white;
+
+
+
+  }
+  header .mobile a{
+    padding: 5.75rem;
+    margin-left: -24px;
+}
+  
+
+    header .mobile img {
+      width: 9rem;
+      margin-top: 18px;
+
+
+
+    }
 }
 
 
-  #sign-up-cta {
-    position: relative;
-    top: 125px;
-    left: 2.5%;
-  }
-  
-  #sign-up-cta .content {
-    width: 34.625rem;
-    margin-top: 2rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
 
-  }
+
+/*Main section */
+.main-section {
+  background-color: lightgray;
+  display: flex;
+  position: relative;
+  width: auto;
+  top: 36px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
   
-  #sign-up-cta h1 {
-    font-size: 38px;
+}
+
+.main-section img{
+width: 100%;
+display: inline-flex;
+position: relative;
+margin: 32px;
+overflow: hidden;
+padding-left: 4px;;
+}
+
+@media (min-width: 1024px) {
+  .main-section .mobile-button{
+    display:none;
+  } 
+}
+
+
+#sign-up-cta {
+  position: absolute;
+  width: 30%;
+  top: 125px;
+  right: 2.5%;
+}
+#sign-up-cta .content-center{
+  font-size: 2.5rem;
+}
+#sign-up-cta .header{
+  font-size: 1.2rem;
+  color: rgb(165, 162, 162);
+}
+
+#sign-up-cta  h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+
+}
+
+#sign-up-cta h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(44, 42, 42);
+  font-style: normal;
+}
+
+#sign-up-cta h2 strong {
+  font-weight: 800;
+}
+
+
+#sign-up-cta .button {
+  margin-top: 3.825rem;
+  padding: 1.25rem 7.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  background-color: #4a4a4a;
+  border-radius: 1%;
+  text-decoration: none;
+}
+#sign-up-cta a {
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(44, 42, 42);
-    font-style: normal;
+    color: white;
+}
+
+#sign-up-cta .button:hover {
+  background-color: black;
+  text-decoration: underline;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.55s;
+  transition-delay: 0.10s;
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  #msection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+  }
+  .main-section {
+    width: 100%;
+    height: 152rem;
+  }
+  .main-section img{
+    width: 100%;
+    margin: 0;
+  }
+
+  #content-cta {
+    width: 100%;
+  }
+
+
+  #sign-up-cta  h1 {
+    font-size: 88px;
+    opacity: 0.9;
+    color: #4a4a4a;
+    margin-top: -1rem;
+    margin-left: -210%;
+
   }
   
   #sign-up-cta h2 {
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(44, 42, 42);
-    font-style: normal;
-  }
-  
-  #sign-up-cta h2 strong {
-    font-weight: 800;
-  }
+    font-size: 9rem;
+    opacity: 0.9;
+    margin-left: -210%;
+    margin-top: 230%;
 
-  
+  }
   #sign-up-cta .button {
-    margin-top: 3.825rem;
-    padding: 1.25rem 7.25rem;
+    display: none;
+  }
+  #sign-up-cta .mobile-button {
+    margin-top: 10.825rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 24px;
+    font-size: 88px;
     text-align: center;
-    background-color: #4a4a4a;
+    background-color: #969494;
     border-radius: 1%;
     text-decoration: none;
-  }
-  #sign-up-cta a {
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-  }
+    margin-left: -210%;
+    margin-right: 12.5%;
+    padding: 1.75rem;
+}
 
-  #sign-up-cta .button:hover {
-    background-color: black;
-    text-decoration: underline;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.55s;
-    transition-delay: 0.10s;
+}
 
-  }
+/* Mid Section */
   .mid-section {
     display: flex;
     position: relative;
     background-color: white;
-    height: 68.3rem;
+    height: 62.3rem;
     width: 100%;
     top: 132px;
     left: 34px;
@@ -187,14 +306,96 @@ nav a {
     flex-wrap: wrap;
 }
 .mid-section img{
-    width: 60%;
+    width: 100%;
     display: inline-flex;
     position: relative;
     overflow: hidden;
 }
+@media only screen and (max-width: 500px) {
+  .midsection-desktop {
+    display: none;
+  }
+  .mid-section{
+    display: flex;
+    height: 220rem;
+    background-color:rgb(247, 245, 243);
+    margin-left: -35px;
+    padding: 0;
+    top: -10px;
+    position: relative;
+
+  }
+
+  .mid-section .banner-content{
+    padding-top: 48.8rem;
+
+
+  }
+  .mid-section .banner-cta{
+    width: 425%;
+    margin: -85%;
+    padding-top: 40rem;
+
+
+    }
+  .mid-section #banner{
+    margin-top: -50rem;
+
+
+  }
+  .mid-section #banner .orientation{
+    height: 45rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/information-orientation-mobile.jpg);
+
+  }
+  .mid-section #banner figure {
+    display: none;
+  }
+  .mid-section #banner .text{
+    margin-left: 14%;
+    position: relative;
+    margin-top: -2rem;
+  }
+  #banner span h2 strong{
+    font-size: 4rem;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 42, 42);
+  }
+  #banner .text span p{
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-top: 6rem;
+  }
+  #banner .text span a{
+    font-size: 3rem;
+    line-height: 3.1;
+    color: blue;  
+  }
+  #banner .text span .read a{
+    top: 120px;
+  }
+  .mid-section #banner .content{
+    height: 45rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/information-campus-mobile.jpg);
+  }
+  .mid-section #banner .lecture{
+    height: 45rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/information-guest-lecture-mobile.jpg);
+  }
+}
 
 .mid-section h2 {
-    font-size: 45px;
+    font-size: 60px;
     top: 20px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -220,26 +421,27 @@ nav a {
     width: 40rem;
     height: 18rem;
     justify-content: space-around;
-    top: -120px;
-
-
+    top: -70px;
 }
 .mid-section #banner {
     padding-left: -15px;
     width: 80rem;
-    height: auto;
     justify-content: space-around;
+
+}
+@media (min-width: 1024px) {
+  .mid-section #banner{
     border-left: solid 2px lightgray;
     border-bottom: solid 3px lightgray;
-
-    
-}
-
-.mid-section :hover {
+      } 
+.mid-section #banner:hover {
   background-color: lightgray;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.55s;
+  transition-delay: 0.10s;
 
 }
-
+}
 
 .mid-section #banner h2 {
     padding: -10.5rem 0;
@@ -279,15 +481,26 @@ nav a {
 }
 .mid-section #banner img {
   width: 35%;
-  height: auto;
   margin-left: -10px;
   top: 16px;
 
 }
-.mid-section #banner .lecture a {
-  top: 70.5px;
-}
+.mid-section #banner .read a {
+  top: 72.5px;
+  }
 
+
+
+
+
+
+
+/* Learning Section */
+@media (min-width: 1024px) {
+  .learning .learning-button{
+    display:none;
+  } 
+}
 #learning-section{
   display: flex;
   justify-content: flex-start;
@@ -306,8 +519,6 @@ nav a {
   width: auto;
   top: 156px;
   overflow: hidden;
-
-
 }
 .learning #learning-section .learn{
   display: inline-flex;
@@ -315,11 +526,7 @@ nav a {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
-  
-
 }
-
 
 .learning #learning-section .image-conatiner {
   display: inline-flex;
@@ -365,7 +572,11 @@ nav a {
   text-decoration: none;
 }
 .learning #learning-section .caption:hover{
-  background-color: rgb(189, 184, 184);
+  background-color: rgb(230, 222, 222);
+  border-bottom: solid 3px rgb(131, 130, 130);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.55s;
+  transition-delay: 0.10s;
 }
 .learning #learning-section .caption h5{
   opacity : 0.7;
@@ -382,11 +593,43 @@ nav a {
   margin-top: -10px;
 
 }
+@media only screen and (max-width: 500px) {
+  .learning #learning-section{
+    display: none;
+  }
+  .learning{
+    background-color: rgb(247, 247, 244);
+    top: -1rem;
+    height: 160rem;
+  }
+  .learning h4 strong{
+    font-size: 7.5rem;
+  }
+  .learning a{
+    text-decoration: none;
+    font-weight:300;
+    text-align: left;
+  }  
+  .learning h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(44, 42, 42);
+    font-size: 6rem;
+    text-align: left;
+    background-color: rgb(226, 224, 224);
+    border-radius: 1%;
+    padding: 4.75rem;
+    margin: 7%;
+  }
+}
 
+
+
+
+/* Thesis Section */
 .thesis{
   display: flex;
   position: relative;
-  top: 236px;
+  top: 206px;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
@@ -526,7 +769,34 @@ nav a {
 .thesis .box #boxid .box-cta a{
   text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+  .thesis .subtitle{
+    display: none;
+  }
+  .thesis .box{
+    display: none;
+  }
+  .thesis{
+    top: -1rem;
+    height: 90rem;
+    background-color: #f7f2f2;
+  }
+  .thesis h2{
+    font-size: 7.5rem;
+    margin-top: 3rem;
+  }
+  .thesis .video{
+    width: 100%;
+  }
+  .thesis video{
+    width: 145rem;
+    border: solid 5px #4a4a4a;
+    margin-left: -10%;
+  }
+}
 
+
+/* Footer */
 .footer{
   display:inline-flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -580,3 +850,18 @@ footer a:hover {
   font-weight: 600;
   
 }
+
+@media only screen and (max-width: 500px) {
+  footer nav{
+    display: none;
+  }
+  footer h5{
+    font-size: 4rem;
+    opacity: 0.9;
+    font-weight: 550;
+  }
+  footer{
+    top: -10rem;
+  }
+}
+
